@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LogIn</title>
+        <link rel="stylesheet" href="css/login.css">
+    </head>
+    <body>
+        <header>
+            <a href="index.html"><img src="img/logo.png" alt="Logo" id="logo"></a>
+
+            <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+    </header>
+
+    <main>
+        <div class="container">
+            <form action="">
+                <div class="main-container">
+                    <h1>Login</h1>
+                    <div class="content">
+
+                        <div class="input-field">
+                            <input type="email" placeholder="EMAIL" autocomplete="nope" id="contact-email" onkeyup="validateEmail()">
+                            <span id="email-error"></span>
+                        </div>
+                        <div class="input-field">
+                            <input type="password" placeholder="PASSWORD" autocomplete="new-password" id="contact-pwd" onkeyup="validatePwd()">
+                            <span id="pwd-error"></span>
+                        </div>
+
+                        
+
+                        <div class="action">
+                            <a href="register.html">Register</a>
+                            <button onclick="return validateForm()">Sign-In</button>
+                            <span id = "submit-error"></span>
+                        </div>
+
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <p>©2022 Recipes</p>
+        </div>
+    </footer>
+    <script src="js/login.js"></script>
+    </body>
+</html>
