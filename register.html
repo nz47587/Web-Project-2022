@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register</title>
+        <link rel="stylesheet" href="css/register.css">
+    </head>
+    <body>
+        <header>
+            <a href="index.html"><img src="img/logo.png" alt="Logo" id="logo"></a>
+
+            <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+    </header>
+
+   <main>
+        <div class="container">
+            <form action="">
+                <div class="main-container">
+                    <h1>Register</h1>
+                        <div class="content">
+
+                            <input type="text" placeholder="NAME" autocomplete="nope " id="contact-name" onkeyup="validateName()">
+                            <span id="name-error"></span>
+                            <input type="text" placeholder="USERNAME" autocomplete="nope" id="contact-username" onkeyup="validateUsername()">
+                            <span id="username-error"></span>
+                            <input type="email" placeholder="EMAIL" id="contact-email" onkeyup="validateEmail()">
+                            <span id="email-error"></span>
+                            <input type="password" placeholder="PASSWORD" autocomplete="new-password" id="contact-pwd" onkeyup="validatePwd()">
+                            <span id="pwd-error"></span>
+
+                            <div class="action">
+                                <a href="login.html">LogIn</a>
+                                <button onclick="return validateForm()">Submit</button>
+                                <span id = "submit-error"></span>
+                            </div>
+
+                        </div>
+                </div>
+            </form>
+        </div>
+   </main>
+
+    <footer>
+        <div>
+            <p>©2022 Recipes</p>
+        </div>
+    </footer>
+    <script src="js/register.js"></script>
+    </body>
+</html>
