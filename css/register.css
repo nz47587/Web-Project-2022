@@ -3,52 +3,6 @@
     margin: 0;
 }
 
-/*----------------- Header ------------------ */
-
-header{
-    width: 100%;
-    height: 70px;
-    background-color:transparent;
-    background-size: 100%;
-    display: flex;
-    justify-content: flex-end;
-    font-family: 'Rubik', sans-serif;
-}
-
-#logo{
-    height: 80px;
-    padding-right: 690px;
-    align-self: center;
-}
-
-.nav{
-    display: flex;
-    align-items: center;
-}
-
-.nav li{
-    list-style: none;
-    margin-left: 20px;
-}
-
-.nav a{
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 130%;
-    /* color: aliceblue; */
-    color: black;
-    font-weight: bold;
-}
-
-li :last-child{
-    margin-right: 20px;
-}
-
-header a:hover {
-	transition: 0.5s;
-    color: #219ecb;
-}
-
 
 /* ---------------Register--------------- */
 
@@ -56,7 +10,7 @@ header a:hover {
 .container{
     height: 100vh;
     width: 100%;
-    background: linear-gradient(45deg, #dd4589, #f7bb97);
+    background: linear-gradient(45deg,rgb(227, 158, 75), rgb(234, 164, 159));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -161,28 +115,3 @@ input:focus{
     color: red;
 }
 
-/* .content label{
-    position: absolute;
-    bottom: 12px; 
-    right: 17px;
-    font-size: 14px;
-    color: red;
-} */
-
-
-
-
-
-/* ---------------Footer--------------- */
-
-footer div{
-    height: 60px;
-    width: 100%;
-    background-color: #d3d2d2;
-}
-
-footer div p{
-    text-align: center;
-    font-size: larger;
-    padding-top: 20px;
-}
